@@ -1,0 +1,2 @@
+cd SearchEngine
+rails server

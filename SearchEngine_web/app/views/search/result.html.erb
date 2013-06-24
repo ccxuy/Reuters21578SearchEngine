@@ -1,0 +1,27 @@
+<% require 'mongo' %>
+<h1>Search Engine for Reuters21578</h1>
+<h3>Result for: <%=@query%> , <%= @result_set.count %> results found.</h3>
+<table  id="context" border="1">
+  <%# GET DATABASE CONTENT %>
+  <% @q_term = []
+     @coll.to_a %>
+  <% @result_set.each do |info| %>
+      <tr>
+        <td><%= info[0] %></td>
+        <td><%= info[1] %></td>
+      </tr>
+  <% end %>
+
+</table>
+
+<br />
+
+<%= link_to 'Back', '/' %>
+
+<script language="JavaScript" type="text/javascript"><!--
+    $(function(){
+        var text = "<%=@query%>";
+        var patrn=new RegExp(text,"g");
+        $('#context').html($("#context").html().replace(patrn,"<font color=”#FFFF00”>"+text+"</font>"));
+    })
+//--></script>

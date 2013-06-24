@@ -1,0 +1,21 @@
+<h1 align="center">Search Engine for Reuters21578</h1>
+<h4 align="center">Type query terms</h4>
+<table align="center">
+  <tr>
+    <th></th>
+    <th>
+      <%= form_tag("/search/result", :method => "get") do %>
+        <center>
+          <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:qt) %>
+          <%= submit_tag("Search") %>
+        </center>
+      <% end %>
+    </th>
+  </tr>
+
+
+</table>
+
+<br />
+

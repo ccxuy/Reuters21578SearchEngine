@@ -1,0 +1,1 @@
+mongod.exe --dbpath D:\Workspace\_WEB\SearchEngine\data\db

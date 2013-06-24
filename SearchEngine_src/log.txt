@@ -1,0 +1,10 @@
+[11/12/2012 at 11:26PM]
+
+Adding annotator tokenize
+Adding annotator ssplit
+Adding annotator pos
+Loading default properties from trained tagger C:/Ruby193/lib/ruby/gems/1.9.1/gems/stanford-core-nlp-0.3.2/bin/taggers/english-left3words-distsim.tagger
+Reading POS tagger model from C:/Ruby193/lib/ruby/gems/1.9.1/gems/stanford-core-nlp-0.3.2/bin/taggers/english-left3words-distsim.tagger ... done [2.5 sec].
+Adding annotator lemma
+Adding annotator parse
+Loading parser from serialized file C:/Ruby193/lib/ruby/gems/1.9.1/gems/stanford-core-nlp-0.3.2/bin/grammar/englishPCFG.ser.gz ... done [3.3 sec].
